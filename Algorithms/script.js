@@ -38,4 +38,22 @@ function countVowels (text) {
 	console.log(count);
 }
 
+function joeCountVowels(text) {
+
+	//Regular Expressions are good for testing patterns in strings.
+	const vowelTest = new RegExp("a|e|i|o|u", "i");
+	let vowelCount = 0;
+	let letters = text.split("");
+
+	//Arrays have a common iterator method forEach
+	letters.forEach((letter) => {
+		if (vowelTest.test(letter)) {
+			vowelCount++;
+		}
+	})
+	console.log("Joe Counts: " + vowelCount)
+	return vowelCount;
+}
+
 countVowels(text);
+joeCountVowels(text);
