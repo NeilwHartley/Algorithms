@@ -62,7 +62,7 @@ joeCountVowels(text);
 
 //**************************************************************************************************************
 
-let arr = [7, 6, -5, 4, 3, 2, 1];
+let arr = [7, 6, -5, -4, 3, 2, 1];
 
 console.log(arr);
 
@@ -73,18 +73,18 @@ console.log(arr);
 
 function sort (array) {
 
-	let len = array.length;
-	for (let i = 1; i < len; i++) {
-		console.log("For: " + array);
-		let current = array[i];
-		let j = i - 1;
-		while (j >= 0 && array[j] > current) {
-			console.log("While: " + array);
-			array[j + 1] = array[j];
-			j = j - 1;
-		}
-		array[j + 1] = current;
-	}
+	// let len = array.length;
+	// for (let i = 1; i < len; i++) {
+	// 	console.log("For: " + array);
+	// 	let current = array[i];
+	// 	let j = i - 1;
+	// 	while (j >= 0 && array[j] > current) {
+	// 		console.log("While: " + array);
+	// 		array[j + 1] = array[j];
+	// 		j = j - 1;
+	// 	}
+	// 	array[j + 1] = current;
+	// }
 	return array
 }
 
